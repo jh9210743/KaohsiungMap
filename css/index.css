@@ -1,0 +1,574 @@
+/*Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, button {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Initial CSS*/
+@media only screen and (min-width: 769px) and (max-width: 1920px) {
+  .popup{
+    display: none;
+  }
+  .wrap{
+    width: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .header{
+    background-color: #ffffff; 
+    width: 100%;
+    height: 13vh;
+  }
+  .logo{
+    float: left;
+    margin: 2vh auto auto 60px;
+  }
+  .logo h1{
+    position: absolute;;
+    width: 127px;
+    height: 11vh;
+  }
+  .logo a{
+    width: 127px;
+    height: 11vh;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    background-image: url('../resource/img/logo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center; 
+  }
+  .contact{
+    float: right;
+    width: 70%;
+  }
+  .contact ul{
+    height: 9vh;
+    width: 70%;
+    padding: 4vh 0 0 0;
+    float: right;
+  }
+  .contact ul li{
+    display: block;
+    width: 40px;
+    float: right;
+    margin: 0 20px 0 0;
+  }
+  .contact ul img{
+    width: 40px;
+    height: 40px;
+  }
+  .contact > .tablet_mobile{
+    display: none;
+  }
+  .container{
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff; 
+    clear: both;
+  }
+  #map{
+    width: 85%;
+    height: 75vh;
+    margin: 5vh auto auto;
+  }
+  .map{
+    width: 50%; 
+    background-color: #ffffff;
+    height: 85vh;
+    float: left;
+  }
+  .infoWindow{
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .infoWindow img{
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0 0;
+    vertical-align: text-bottom;
+  }
+  .infoWindow p{
+    margin: 2.5px auto 2.5px auto;
+  }
+  .content{
+    width: 50%;
+    background-color: #ffffff; 
+    height: 85vh;
+    float: right;
+  }
+  .search{
+    width: 92%;
+    margin: 2vh auto;
+    height: 7vh;
+    background-color: #ececec;
+    border-radius: 5px;
+  }
+  .search input{
+    width: 80%;
+    height: 7vh;
+    float: left;
+    background-color: unset;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .search button{
+    width: 15%;
+    height: 6vh;
+    float: right;
+    margin: 0.5vh 2%;
+    background-color:#c0bebe;
+    border-style: none;
+    border-radius: 5px;
+  }
+  .item{
+    width: 92%;
+    height: 72vh;
+    margin: 2vh auto;
+    overflow-y: scroll;
+  }
+  #showitem li {
+    width: 98%;
+    height: fit-content;
+    padding: 10px 0 0 0;
+    margin: 0 auto 10px 0;
+    background-color: #ececec;
+    border-radius: 5px;
+  }
+  #showitem li p{
+    margin: 0 0 10px 15px;
+  }
+  .li-title{
+    font-size: 1.2em;
+  }
+  .li-address{
+    display: inline-block;
+  }
+  .li-phone{
+    display: inline-block;
+  }
+  .li-photo{
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    vertical-align: text-bottom;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .popup{
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+  }
+  .wrap{
+    width: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .header{
+    background-color: #ffffff; 
+    width: 100%;
+    height: 10vh;
+  }
+  .logo{
+    float: left;
+    margin: auto auto auto 30px;
+  }
+  .logo h1{
+    position: absolute;
+    width: 167px;
+    height: 10vh;
+  }
+  .logo a{
+    width: 167px;
+    height: 9vh;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    background-image: url('../resource/img/logo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center; 
+  }
+  .contact{
+    float: right;
+    width: 60%;
+    height: 10vh;
+  }
+  .contact ul{
+    display: none;
+  }
+  .contact > .tablet_mobile{
+    float: right;
+  }
+  .tablet_mobile img {
+    width: 36px;
+    height: 36px;
+    margin: 3.5vh 3vh 0 0; 
+  }
+  .contact_popup{
+    z-index: 100;
+    margin: 5vh auto auto auto;
+    width: 60%;
+    height: 260px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .contact_popup p{
+    font-size: 1.5em;
+    width: 100%;
+    height: 96px;
+    text-align: center;
+    padding: 48px 0 0 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .contact_popup ul{
+    height: 64px;
+  }
+  .contact_popup ul li{
+    float: left;
+    width: 10%;
+    margin: 6px auto auto 5%;
+  }
+  .contact_popup ul .first{
+    float: left;
+    width: 10%;
+    margin: 6px auto auto 22.5%;
+  }
+  .contact_popup ul li img{
+    width: 40px;
+    height: 40px;
+  }
+  #exit{
+    width: 36px;
+    height: 36px;
+    margin: 15px 0 0 45%;
+    background-color: unset;
+    opacity: 0.8;
+    background-image: url('../resource/img/cancel.png');
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .container{
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff; 
+    clear: both;
+  }
+  #map{
+    width: 100%;
+    height: 40vh;
+  }
+  .map{
+    width: 100%; 
+    background-color: #ffffff;
+    height: 40vh;
+  }
+  .infoWindow{
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .infoWindow img{
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0 0;
+    vertical-align: text-bottom;
+  }
+  .infoWindow p{
+    margin: 2.5px auto 2.5px auto;
+  }
+  .content{
+    width: 100%;
+    background-color: #ffffff; 
+    height: 50vh;
+    float: right;
+  }
+  .search{
+    width: 90%;
+    margin: 2vh auto;
+    height: 5vh;
+    background-color: #ececec;
+    border-radius: 5px;
+  }
+  .search input{
+    width: 80%;
+    height: 5vh;
+    float: left;
+    background-color: unset;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .search button{
+    width: 15%;
+    height: 4vh;
+    float: right;
+    margin: 0.5vh 2%;
+    background-color:#c0bebe;
+    border-style: none;
+    border-radius: 5px;
+  }
+  .item{
+    width: 92%;
+    height: 40vh;
+    margin: 2vh auto 0 auto;
+    overflow-y: scroll;
+  }
+  #showitem li {
+    width: 98%;
+    height: fit-content;
+    padding: 10px 0 0 0;
+    margin: 0 auto 10px 0;
+    background-color: #ececec;
+    border-radius: 5px;
+  }
+  #showitem li p{
+    margin: 0 0 10px 15px;
+  }
+  .li-title{
+    font-size: 1.2em;
+  }
+  .li-address{
+    display: inline-block;
+  }
+  .li-phone{
+    display: inline-block;
+  }
+  .li-photo{
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    vertical-align: text-bottom;
+  }
+}
+
+@media only screen and (max-width: 480px)  {
+  .popup{
+    height: 100vh;
+    z-index: 99;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.555);
+    display: none;
+  }
+  .wrap{
+    width: 100%;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .header{
+    background-color: #ffffff; 
+    width: 100%;
+    height: 9vh;
+  }
+  .logo{
+    float: left;
+    margin: 1vh auto auto 30px;
+  }
+  .logo h1{
+    position: absolute;
+    width: 120px;
+    height: 7vh;
+  }
+  .logo a{
+    width: 120px;
+    height: 7vh;
+    display: block;
+    float: left;
+    text-indent: -9999px;
+    background-image: url('../resource/img/logo.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center; 
+  }
+  .contact{
+    float: right;
+    width: 60%;
+    height: 7vh;
+  }
+  .contact ul{
+    display: none;
+  }
+  .contact > .tablet_mobile{
+    float: right;
+  }
+  .tablet_mobile img {
+    width: 36px;
+    height: 36px;
+    margin: 2.5vh 2vh 0 0; 
+  }
+  .contact_popup{
+    z-index: 100;
+    margin: 4vh auto auto auto;
+    width: 70%;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .contact_popup p{
+    font-size: 1.5em;
+    width: 100%;
+    height: 72px;
+    text-align: center;
+    padding: 30px 0 0 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .contact_popup ul{
+    height: 64px;
+  }
+  .contact_popup ul li{
+    float: left;
+    width: 14%;
+    margin: 6px 0 0 8.5%;
+  }
+  .contact_popup ul .first{
+    float: left;
+    width: 14%;
+    margin: 6px 0 0 8.5%;
+  }
+  .contact_popup ul li img{
+    width: 40px;
+    height: 40px;
+  }
+  #exit{
+    width: 36px;
+    height: 36px;
+    margin: 0 0 0 43%;
+    background-color: unset;
+    opacity: 0.8;
+    background-image: url('../resource/img/cancel.png');
+    background-size: 36px 36px;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  .container{
+    width: 100%;
+    height: fit-content;
+    background-color: #ffffff; 
+    clear: both;
+  }
+  #map{
+    width: 100%;
+    height: 35vh;
+  }
+  .map{
+    width: 100%; 
+    background-color: #ffffff;
+    height: 35vh;
+  }
+  .infoWindow{
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+  .infoWindow img{
+    width: 16px;
+    height: 16px;
+    margin: 0 3px 0 0;
+    vertical-align: text-bottom;
+  }
+  .infoWindow p{
+    margin: 2.5px auto 2.5px auto;
+  }
+  .content{
+    width: 100%;
+    background-color: #ffffff; 
+    height: 50vh;
+    float: right;
+  }
+  .search{
+    font-size: 0.8em;
+    width: 90%;
+    margin: 1vh auto;
+    height: 4vh;
+    background-color: #ececec;
+    border-radius: 5px;
+  }
+  .search input{
+    width: 80%;
+    height: 4vh;
+    float: left;
+    background-color: unset;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .search button{
+    width: 15%;
+    height: 3vh;
+    float: right;
+    margin: 0.5vh 2%;
+    background-color:#c0bebe;
+    border-style: none;
+    border-radius: 5px;
+  }
+  .item{
+    width: 92%;
+    height: 40vh;
+    margin: 1vh auto 0 auto;
+    overflow-y: scroll;
+  }
+  #showitem li {
+    width: 98%;
+    height: fit-content;
+    padding: 10px 0 0 0;
+    margin: 0 auto 10px 0;
+    background-color: #ececec;
+    border-radius: 5px;
+  }
+  #showitem li p{
+    margin: 0 0 10px 15px;
+  }
+  .li-title{
+    font-size: 1em;
+  }
+  .li-address{
+    display: inline-block;
+  }
+  .li-phone{
+    display: inline-block;
+  }
+  .li-photo{
+    width: 20px;
+    height: 20px;
+    margin: 0 8px 0 0;
+    vertical-align: text-bottom;
+  }
+}

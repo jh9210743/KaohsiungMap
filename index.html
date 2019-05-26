@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/index.css" />
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous">
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div class='popup'>
+      <div class='contact_popup'>
+        <p>Contact</p>
+        <ul class=''>
+          <li class="first"><a href="https://gitlab.com/jh9210743" target="_blank"><img src="resource/img/gitlab.png" alt=""></a></li>
+          <li><a href="https://www.cakeresume.com/s--0Tv4NPMF5JcI9eAiHUK9tg--/jamie-hsieh-6d8c37" target="_blank"><img src="resource/img/cake-resume.png" alt=""></a></li>
+          <li><a href="https://www.linkedin.com/in/jh9210743" target="_blank"><img src="resource/img/linkedin.png" alt=""></a></li>
+          <li><a href="#" target="_blank"><img src="resource/img/profile_website.png" alt=""></a></li>
+        </ul>
+        <button id='exit'></button>
+      </div>
+    </div>
+  </div>
+  <div class='wrap'>
+    <div class='header'>
+        <div class="logo">
+            <h1><a href="index.html">高雄市原民會旅遊便利GO</a></h1>
+        </div>
+      <div class='contact'>
+        <div class='tablet_mobile'><img id='popbutton' src="./resource/img/more.png" alt=""></div>
+        <ul>
+          <li><a href="#" target="_blank"><img src="resource/img/profile_website.png" alt=""></a></li>
+          <li><a href="https://www.linkedin.com/in/jh9210743" target="_blank"><img src="resource/img/linkedin.png" alt=""></a></li>
+          <li><a href="https://www.cakeresume.com/s--0Tv4NPMF5JcI9eAiHUK9tg--/jamie-hsieh-6d8c37" target="_blank"><img src="resource/img/cake-resume.png" alt=""></a></li>
+          <li><a href="https://gitlab.com/jh9210743" target="_blank"><img src="resource/img/gitlab.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='map'>
+        <div id='map'>
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap"
+        async defer></script>
+        </div>
+      </div>
+      <div class='content'>
+        <div class='search'>
+          <input id='querytext' type="text" placeholder="請輸入路段或名稱" action="" value="">
+          <button id='query'>搜尋</button>
+        </div>
+        <div class='item'>
+          <ul id='showitem'></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
